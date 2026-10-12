@@ -16,7 +16,7 @@ class FSMLocation(models.Model):
     _parent_name = "parent_id"
     _parent_store = True
     _stage_type = "location"
-    _rec_names_search = ["complete_name"]
+    _rec_names_search = ("complete_name",)
 
     direction = fields.Html()
     partner_id = fields.Many2one(
